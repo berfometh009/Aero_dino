@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.game {
+    width: 1000px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    background-image: url(bkg_01.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    border: 1px solid black;
+    }
+
+#dino {
+    width: 140px;
+    height: 100px;
+    background-image: url(aviao_03.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    top: 375px;
+    left: 10px;
+}
+
+.animate {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 100px;
+    }
+    30% {
+        top: 50px;
+    }
+    70% {
+        top: 50px;
+    }
+    100% {
+        top: 100px;
+    }
+}
+
+#block {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 280px;
+    left: 500px;
+    background-image: url(wifi.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 900px
+    }
+    100% {
+        left: -20px
+    }
+}
+
+p {
+    text-align: center;
+}
